@@ -70,8 +70,12 @@
         <div class="gh-foot-inner gh-inner">
             <div class="gh-copyright">
                 {{@site.title}} © {{date format="YYYY"}}
+                {{#if @site.description}}
+                    <div class="cover-description">{{@site.description}}</div>
+                {{/if}}
             </div>
         </div>
+        
     </footer>
 
     {{> "pswp"}}
