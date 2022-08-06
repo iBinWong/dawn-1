@@ -23,7 +23,10 @@
         </div>
         {{/is}}
 
-        <h1 class="single-title">{{title}}</h1>
+        {{#is "home"}}
+             {{else}}
+             <h1 class="single-title">{{title}}</h1>
+        {{/is}}
 
         {{#if custom_excerpt}}
             <div class="single-excerpt">
