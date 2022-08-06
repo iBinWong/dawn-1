@@ -1,14 +1,11 @@
-<div class="cover gh-outer">
+<div>
+    {{#if @site.cover_image}}
+        <img class="cover-image" src="{{@site.cover_image}}" alt="{{@site.title}}">
+    {{/if}}
     <div class="cover-content gh-inner">
-        {{#if @site.icon}}
-        <div class="cover-icon">
-            <img class="cover-icon-image" src="{{@site.icon}}" alt="{{@site.title}}">
-        </div>
-        {{/if}}
 
-        {{#if @site.description}}
-        <div class="cover-description">{{@site.description}}</div>
-        {{/if}}
+
+       
         {{#if @site.members_enabled}}
         {{#unless @member}}
         <div class="cover-cta">
